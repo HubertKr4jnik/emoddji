@@ -34,8 +34,10 @@ To play this game you can specifi the following query parameters in the url:
 
 A correct url should look something like this:
 <br/>
-url?rounds=3&&oddPercentage=10&&normalEmoji=😊&&oddEmoji=😚
+https://emoddji.vercel.app?rounds=3&&oddPercentage=10&&normalEmoji=😊&&oddEmoji=😚
 
+If you don't specify these the site will prompt you  to enter the values.
+<br/>
 
 ## Built With
 
@@ -57,7 +59,7 @@ To run this project locally you nedd the following:
 
 ## Live demo
 
-The project is avalible under this url: <a href=""></a>
+The project is avalible under this url: <a href="https://emoddji.vercel.app/">https://emoddji.vercel.app/</a>
 <hr/>
 
 <!-- MARKDOWN LINKS & IMAGES -->
