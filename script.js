@@ -20,11 +20,11 @@ while (oddPercentage <= 0 || oddPercentage > 100 || isNaN(oddPercentage)) {
     oddPercentage = Number(queryOddPercentage) || Number(prompt("What % of emojis should be different?"));
 }
 var normalEmoji = queryNormalEmoji || prompt("What should be the normal emoji?");
-while (normalEmoji == '' || normalEmoji.length > 1) {
+while (normalEmoji == '' || normalEmoji.length > 2) {
     normalEmoji = queryNormalEmoji || prompt("What should be the normal emoji?");
 }
 var oddEmoji = queryOddEmoji || prompt("What should be the odd emoji?");
-while (oddEmoji == '' || oddEmoji.length > 1) {
+while (oddEmoji == '' || oddEmoji.length > 2) {
     oddEmoji = queryOddEmoji || prompt("What should be the odd emoji?");
 }
 var numOfOddEmojis = Math.round((oddPercentage / 100) * (gridColumns * gridRows)) || 1;
