@@ -15,7 +15,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![website-image](https://github.com/user-attachments/assets/fcd1a9d0-bc31-48a7-b69b-d08100dae192)
+![website-image](https://github.com/user-attachments/assets/8177d167-6607-49ef-942d-53c5e1ca5772)
+
 
 This is a very simple, fun and sometimes frustrating game where the objective is to find all the odd emojis in a sea of other ones.
 
