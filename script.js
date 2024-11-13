@@ -12,19 +12,19 @@ var queryNormalEmoji = urlParams.get("normalEmoji");
 var queryOddEmoji = urlParams.get("oddEmoji");
 var rounds = queryRounds || Number(prompt("How many rounds (1 - 3)?"));
 rounds = Number(rounds);
-while (rounds <= 0 || rounds > 3) {
+while (rounds <= 0 || rounds > 3 || isNaN(rounds)) {
     rounds = Number(prompt("How many rounds (1 - 3)?"));
 }
 var oddPercentage = Number(queryOddPercentage) || Number(prompt("What % of emojis should be different?"));
-while (oddPercentage <= 0 || oddPercentage > 100) {
+while (oddPercentage <= 0 || oddPercentage > 100 || isNaN(oddPercentage)) {
     oddPercentage = Number(queryOddPercentage) || Number(prompt("What % of emojis should be different?"));
 }
 var normalEmoji = queryNormalEmoji || prompt("What should be the normal emoji?");
-while (normalEmoji == '') {
+while (normalEmoji == '' || normalEmoji.length > 1) {
     normalEmoji = queryNormalEmoji || prompt("What should be the normal emoji?");
 }
 var oddEmoji = queryOddEmoji || prompt("What should be the odd emoji?");
-while (oddEmoji == '') {
+while (oddEmoji == '' || oddEmoji.length > 1) {
     oddEmoji = queryOddEmoji || prompt("What should be the odd emoji?");
 }
 var numOfOddEmojis = Math.round((oddPercentage / 100) * (gridColumns * gridRows)) || 1;
